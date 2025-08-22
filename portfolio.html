@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <header class="header">
+    <div class="brand" id="brandName">Your Name</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="editBtn" class="btn ghost">Edit</button>
+      <button id="themeToggle" class="btn small">Dark</button>
+      <button id="downloadPDF" class="btn small ghost">Print / PDF</button>
+    </nav>
+  </header>
+
+  <main id="portfolioMain">
+    <section id="about" class="section hero card">
+      <div class="hero-left">
+        <div id="profileWrap">
+          <div id="profileImageBox" class="profileImg"></div>
+          <div class="meta">
+            <h1 id="pName">Your Name</h1>
+            <p id="pTitle">Role / Title</p>
+            <p id="pLocation" class="muted">Location</p>
+            <p id="pEmail" class="muted contactLink"></p>
+          </div>
+        </div>
+        <div class="bioCard card">
+          <h3>About</h3>
+          <p id="pBio"></p>
+        </div>
+      </div>
+      <div class="hero-right card skillsCard">
+        <h3>Skills</h3>
+        <div id="pSkills" class="tags"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects card">
+      <h2>Projects</h2>
+      <div id="pProjects" class="projectsGrid"></div>
+    </section>
+
+    <section id="contact" class="section card contactSection">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, email me at <a id="mailTo" href="#">you@example.com</a>.</p>
+      <p class="muted">Or connect via social links below.</p>
+      <div id="pSocial" class="socials"></div>
+    </section>
+  </main>
+
+  <footer class="siteFooter muted">Generated with Portfolio Builder • © <span id="year"></span></footer>
+
+<script src="utils.js"></script>
+<script src="portfolio.js"></script>
+</body>
+</html>
